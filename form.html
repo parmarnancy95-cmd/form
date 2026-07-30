@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user registration form</title>
+</head>
+<body>
+    <form action="process.php" method="post">
+        <fieldset>
+<legend> login form</legend>
+<label >
+    Name
+    <input type="text" placeholder="Enter your name"id="username"required>
+</label><br></br>
+<label >
+Email:
+<input type="email"placeholder=parmar@gmail.com  id="useremail"required>
+</label><br></br>
+<label>
+password:
+<input type="password" placeholder="enter your password" id="password">
+</label><br></br>
+<label >
+    confirm password
+    <input type="password" name="confirm password">
+</label><br></br>
+<label >
+    Hobbies:
+    <input type="checkbox"name ="hobbies" value="readbook">readbook
+    <input type="checkbox"name ="hobbies" value="gamming">gamming
+</label><br></br>
+<label>
+    Gender:
+    <input type="radio" name="gender" value="Male">Male
+    <input type="radio" name="gender" value="Female">Female
+    <input type="radio" name="gender" value="other">other
+</label> <br></br>
+<label>
+ DOB:
+ <input type="date">
+</label><br></br>
+<label>
+    profile picture
+    <input type="file" name="profile" id="image">
+</label><br></br>
+<label > 
+    address:
+    <textarea name="address" id="address" cols="12"rows="1"></textarea>
+</label><br></br>
+<label>
+    city:
+    <select name="city" id="city">
+        <option value=""disabled selected > select your city</option>
+        <option value="shimla">shimla</option>
+        <option value="delhi">delhi</option>
+        <option value="mohali">mohali</option>
+    </select>
+</label><br></br>
+<label >
+    Rating
+    <input type="range"min="10" max="20">
+</label><br></br>
+
+<label>
+    keywords:
+    <input type="search">
+</label><br></br>
+<button  type="submit">sumbit</button>
+<button type="reset">reste</button>
+
+</fieldset>
+   </form>
+</body>
+</html>
